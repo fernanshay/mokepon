@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset = 'utf-8' />
+        <title>Mokepón</title>
+        <script src="/js/backend.js"></script>
+    </head>
+    <body>
+        <h1>¡La Batalla Mokepón!</h1>
+        <p>¿Estás listo para la batalla de mokepones más increíbles del mundo?</p>
+        <section id = 'elegir-mascota'>
+            <h2>Elige tu mascota</h2>
+            <input type = 'radio' name = 'mascota-item' id = 'mascota-hipodoge'>
+            <label for = 'mascota-hipodoge'>Hipodoge</label>
+
+            <input type = 'radio' name = 'mascota-item' id = 'mascota-capipepo'>
+            <label for = 'mascota-capipepo'>Capipepo</label>
+
+            <input type = 'radio' name = 'mascota-item' id = 'mascota-ratigueya'>
+            <label for = 'mascota-ratigueya'>Ratigueya</label>
+
+            <button id = 'boton-seleccionar'>Seleccionar</button>
+        </section>
+        <section id = 'mascota-elegida'>
+            <h2>Elige tu ataque</h2>
+            <p>Tu mascota <span id = 'mascota-jugador-elegida'></span> tiene <span id = 'mascota-jugador-vida'>3</span> de vida</p>
+            <p>La mascota <span id = 'mascota-enemigo-elegido'></span> del enemigo tiene <span id = 'mascota-enemigo-vida'>3 </span> de vida</p>
+        </section>
+        <section id = 'ataque'>
+            <p>
+                <button id = 'boton-agua'>Agua</button>
+                <button id = 'boton-tierra'>Tierra</button>
+                <button id = 'boton-fuego'>Fuego</button>
+            </p>
+        </section>
+        <section id = 'mensajes'></section>
+        <section id = 'reiniciar'><button id = 'reiniciar-juego'>Reiniciar Juego</button></section> 
+    </body>
+</html>
