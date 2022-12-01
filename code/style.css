@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Inconsolata:wght@300;400&display=swap');
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: #863A6F;
+    color: #F1D3B3;
+    font-size: 20px;
+}
+
+#elegir-mascota {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 15vh;
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: unset;
+}
+
+.parrafo {
+    font-size: 2.5vh;
+    margin: unset;
+}
+
+h2 {
+    font-size: 5vh
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepones {
+    width: 190px;
+    height: auto;
+    font-family: 'Inconsolata', regular;
+    background-color: #975C8D;
+    color: #F1D3B3;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.tarjeta-de-mokepones img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+button {
+    width: 90px;
+    height: 50px;
+    color: #f7e0ed;
+    font-family: 'Inconsolata', monospace;
+    background-color: #975C8D;
+    border: #D989B5 solid 1px;
+    margin-top: 30px;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#elegir-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+#mascota-hipodoge {
+    display: none;
+}
+#mascota-capipepo {
+    display: none;
+}#mascota-ratigueya {
+    display: none;
+}

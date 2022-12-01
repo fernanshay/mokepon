@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <head> 
+        <meta charset = 'utf-8' />
+        <title>Mokepón</title>
+        <script src = '/js/backend.js'></script>
+        <link rel =  'stylesheet' href = '/style.css' />
+    </head>
+    <body>
+        <section id = 'elegir-mascota'>
+            <h1 class = 'titulo'>¡La Batalla Mokepón!</h1>
+            <p class='parrafo'>¿Estás listo para la batalla de mokepones más increíbles del mundo?</p>
+            <h2>Elige tu mascota</h2>
+            <div class="tarjetas">
+                <input type = 'radio' name = 'mascota-item' id = 'mascota-hipodoge'>
+                <label class='tarjeta-de-mokepones' for = 'mascota-hipodoge'>
+                    <p>Hipodoge</p>
+                    <img src='/images/hipodoge.png' alt='Mascota Hipodoge' />
+                </label>
+
+                <input type = 'radio' name = 'mascota-item' id = 'mascota-capipepo'>
+                <label class='tarjeta-de-mokepones' for = 'mascota-capipepo'>
+                    <p>Capipepo</p>
+                    <img src='/images/capipepo.png' alt='Mascota Capipepo' />
+                </label>
+
+                <input type = 'radio' name = 'mascota-item' id = 'mascota-ratigueya'>
+                <label class='tarjeta-de-mokepones' for = 'mascota-ratigueya'>
+                    <p>Ratigueya</p>
+                    <img src='/images/ratigueya.png' alt='Mascota Ratigueya' />
+                </label>
+            </div>
+
+            <button id = 'boton-seleccionar'>Seleccionar</button>
+        </section>
+        <section id = 'elegir-ataque'>
+            <h2>Elige tu ataque</h2>
+            <p>Tu mascota <span id = 'mascota-jugador-elegida'></span> tiene <span id = 'mascota-jugador-vida'>3</span> de vida</p>
+            <p>La mascota <span id = 'mascota-enemigo-elegido'></span> del enemigo tiene <span id = 'mascota-enemigo-vida'>3 </span> de vida</p>
+        </section>
+        <section id = 'ataque'>
+            <p>
+                <button id = 'boton-agua'>Agua</button>
+                <button id = 'boton-tierra'>Tierra</button>
+                <button id = 'boton-fuego'>Fuego</button>
+            </p>
+        </section>
+        <section id = 'mensajes'></section>
+        <section id = 'reiniciar'><button id = 'reiniciar-juego'>Reiniciar Juego</button></section> 
+    </body>
+</html>
