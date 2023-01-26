@@ -1,83 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Inconsolata:wght@300;400&display=swap');
 
 body {
-    font-family: 'Inconsolata', monospace;
-    background-color: #863A6F;
-    color: #F1D3B3;
-    font-size: 20px;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: #1c6c81;
+    color: aliceblue;
 }
 
 #elegir-mascota {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     align-items: center;
 }
 
 .titulo {
-    font-size: 15vh;
-    font-family: 'Baloo Bhaina 2', cursive;
-    margin: unset;
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    font-size:50px;
+    margin: 20px;
 }
 
-.parrafo {
-    font-size: 2.5vh;
-    margin: unset;
+.subtitulo {
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    font-size: 32px;
 }
 
-h2 {
-    font-size: 5vh
-}
-
-.tarjetas {
+.tarjetas, .botones-ataque {
     display: flex;
     gap: 10px;
+
+}
+
+.tarjetas img {
+    width: 100px;
 }
 
 .tarjeta-de-mokepones {
-    width: 190px;
-    height: auto;
-    font-family: 'Inconsolata', regular;
-    background-color: #975C8D;
-    color: #F1D3B3;
+    width: 180px;
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #145160;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #21ABA5;
+}
+
+#boton-seleccionar-mascota {
+    background-color: #259ba5;
+    border-color: transparent;
+    color: aliceblue;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     padding: 10px;
     box-sizing: border-box;
-    margin: 10px;
-    border-radius: 25px;
-    display: flex;
-}
-
-.tarjeta-de-mokepones img {
-    width: 80px;
-    margin-left: 10px;
-}
-
-button {
-    width: 90px;
-    height: 50px;
-    color: #f7e0ed;
-    font-family: 'Inconsolata', monospace;
-    background-color: #975C8D;
-    border: #D989B5 solid 1px;
-    margin-top: 30px;
-    padding: 1px;
-    box-sizing: border-box;
-    border-radius: 10px;
 }
 
 #elegir-ataque {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
 
-#mascota-hipodoge {
-    display: none;
+#mensajes {
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background: #6196a6cb;
+    color: aliceblue;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
 }
-#mascota-capipepo {
-    display: none;
-}#mascota-ratigueya {
-    display: none;
+
+.reiniciar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    background: transparent;
+    border: 0.5px solid;
+    border-radius: 14px;
+    padding: 7px;
+    color: blue;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+}
+
+.boton-de-ataque {
+    border-radius: 20px;
+    border-color: transparent;
+    color: aliceblue;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#boton-agua  {
+    background-color: #0A2647;
+}
+
+#boton-tierra  {
+    background-color: #3C2A21;
+}
+
+#boton-fuego  {
+    background-color: #DD5353;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .botones-ataque {
+        flex-direction: column;
+    }
 }
