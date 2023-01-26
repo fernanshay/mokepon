@@ -1,2 +1,2 @@
 # mokepon
-A battle game between mokepons! It's fun, come here :)
+A battle game between mokepons! It's fun.
