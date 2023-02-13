@@ -10,10 +10,14 @@
 
             <h2 class='subtitulo'>Elige tu mascota</h2>
 
-            <div id='contenedorTarjetas' class='tarjetas'>
-                
-            </div>
+            <div id='contenedorTarjetas' class='tarjetas'></div>
+
             <button id = 'boton-seleccionar-mascota'>Seleccionar</button>
+        </section>
+        <section id='ver-mapa'>
+            <h1 class='titulo'>Recorre el mapa con tu Mokepon</h1>
+            <canvas id='mapa'></canvas>
+            <button onClick='moverCapipepo()' >Mover</button>
         </section>
         <section id = 'elegir-ataque'>
             <h1 class='titulo'>¡La Batalla Mokepón!</h1>
@@ -28,7 +32,7 @@
             <div id = 'mensajes'>
                 <p id='resultado'>¡Suerte!</p>
 
-                <div class = 'reiniciar'>
+                <div class='reiniciar'>
                     <button id = 'boton-reiniciar'>Reiniciar Juego</button>
                 </div>
             </div>
