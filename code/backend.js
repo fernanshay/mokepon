@@ -19,6 +19,7 @@ const contenedorTarjetas = document.getElementById('contenedorTarjetas')
 const contenedorAtaques = document.getElementById('contenedor-ataques')
 
 const seccionVerMapa = document.getElementById('ver-mapa')
+const mapa = document.getElementById('mapa')
 
 let mokepones = []
 let ataqueJugador = []
@@ -66,9 +67,11 @@ class Mokepon {
 let mascotaHipodoge = new Mokepon('Hipodoge', './images/hipodoge.png', 5, 'agua')
 let mascotaCapipepo = new Mokepon('Capipepo', './images/capipepo.png', 5, 'tierra')
 let mascotaRatigueya = new Mokepon('Ratigueya', './images/ratigueya.png', 5, 'fuego')
+
 let mascotaLangostelvis = new Mokepon('Langostelvis', './images/langostelvis.png', 5, 'fuego')
 let mascotaPydos = new Mokepon('Pydos', './images/pydos.png', 5, 'tierra')
 let mascotaTucapalma = new Mokepon('Tucapalma', './images/tucapalma.png', 5, 'agua')
+
 
 mascotaHipodoge.ataques.push(
     { nombre: '💧', id: 'boton-agua' },
@@ -124,12 +127,10 @@ mascotaTucapalma.ataques.push(
     {nombre: '🌱', id: 'boton-tierra'}
 )
 
-mokepones.push(mascotaHipodoge, mascotaCapipepo, mascotaRatigueya)
+mokepones.push(mascotaHipodoge, mascotaCapipepo, mascotaRatigueya, mascotaLangostelvis, mascotaPydos, mascotaTucapalma)
 
 function iniciarJuego() {
     seccionElegirAtaque.style.display = 'none'
-    seccionAtaque.style.display = 'none'
-    seccionMensajes.style.display = 'none'
     seccionVerMapa.style.display = 'none'
 
     mokepones.forEach((mokepon) => {
@@ -151,6 +152,7 @@ function iniciarJuego() {
     })
 
     seleccionar.addEventListener('click', seleccionarMascotaJugador)
+    botonReiniciarJuego.addEventListener('click', reiniciarJuego)
 }
 
 function seleccionarMascotaJugador() {
@@ -311,7 +313,6 @@ function crearMensaje(resultado) {
 
 function crearMensajeFinal(resultadoFinal) {
     seccionMensajes.innerHTML = resultadoFinal
-    botonReiniciarJuego.addEventListener('click', reiniciarJuego)
 }
 
 function reiniciarJuego() {
